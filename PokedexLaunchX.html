@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" type="image/png" href="./images/pokeball.png">
+    <script src="./js/app.js" type="text/javascript" defer></script>
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Práctica Pokédex LaunchX</h1><img src="./images/logo.png" alt="pokemon" class="fondo">
+    <div class="flex"> 
+        <div id="card" class="pokeCard">
+            <img src="./images/pokedex.png" alt="pokdex" class="pokedex">
+            <div id="imageContainer" class="imgContainer">
+                <img id="pokeImg" class="pokeImg" src="./images/questionmark.jpg"/>
+            </div>
+            <form action="" onsubmit="fetchPokemon(event)">
+                <input class="search" type="text" name="pokemon" placeholder="Ingresa un nombre" autocomplete="off">
+            </form>  
+        </div>
+    </div> 
+    <div class="outputData">
+        <div id="pokeName" class="pokeName"></div>
+        <div id="pokeId" class="pokeData"></div>
+        <div id="pokeWeight" class="pokeData"></div>
+        <div id="pokeHeight" class="pokeData"></div>
+        <div id="pokeTypes" class="pokeTypes"></div>
+        <div id="pokeStats" class="pokeStats"></div>
+    </div>  
+</body>
+</html>

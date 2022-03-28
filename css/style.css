@@ -1,0 +1,111 @@
+body {
+    background: radial-gradient(circle, rgba(95,196,128,1) 0%, rgba(211,10,64,1) 50%, rgba(34,196,234,1) 100%);
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1{
+    color: #ffcb08;
+    background-color: #5fc480;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 4px 4px #004a94;
+    border: 4px solid #004a94;
+}
+
+p{
+    color: #004a94;
+    background-color: #5fc480;
+    border: 2px solid #ffcb08;
+    font-size: 30px;
+    text-align: center;
+}
+
+.fondo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.6;
+    width: 1400px;
+    height: 1000px;
+    z-index: -1;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pokeCard {
+    position: absolute;
+    display: flex;
+    flex-direction: row;   
+    width: 780px;
+    height: 590px;
+}
+
+.pokedex {
+    width: 100%;
+    height: 100%;
+}
+
+.pokeImg {
+    position: absolute;
+    height: 170px;
+    width: 240px;
+    top: 180px;
+    left: 85px;
+    border-radius: 10px;
+}
+
+.search {
+    position: absolute;
+    top: 485px;
+    left: 100px;
+    height: 54px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #5fc480;
+    text-align: center;
+    border: 3px solid #000;
+}
+
+.outputData {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #a0d1e6;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    font-size: 14px;
+    opacity: 1;
+    max-width: 250px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.pokeName {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #004a94;
+}
+
+.pokeData div{
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.pokeStats div{
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        padding: 2px;
+}
+
+.pokeTypes div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+    background-color: #004a94;
+}
